@@ -1,0 +1,307 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    color: #1d1d1f;
+    background-color: #ffffff;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-bottom: 12px;
+    color: #1d1d1f;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #1d1d1f;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: 0.009em;
+    margin: 0;
+    color: #1d1d1f;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #06c;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Apple-style Toggle */
+.toggle-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(245, 245, 247, 0.8);
+    padding: 6px;
+    border-radius: 12px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toggle-btn {
+    background: transparent;
+    border: none;
+    color: #1d1d1f;
+    padding: 8px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.toggle-btn.active {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Experience Item Styles */
+.experience-item {
+    margin-bottom: 60px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.exp-header h4 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.exp-period {
+    font-size: 17px;
+    color: #86868b;
+    font-weight: 400;
+}
+
+.exp-company {
+    font-size: 21px;
+    color: #86868b;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+/* Dropdown Styles - Sleek Apple Style */
+.exp-dropdowns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.dropdown-item {
+    background: #f5f5f7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+.dropdown-trigger {
+    padding: 20px 24px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px !important;
+    font-weight: 500 !important;
+    color: #1d1d1f;
+}
+
+.dropdown-trigger:hover {
+    background: #ededf0;
+}
+
+.dropdown-trigger .arrow {
+    font-size: 12px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #86868b;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 0 24px 20px 24px;
+    background: transparent;
+}
+
+.dropdown-content p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #424245;
+}
+
+/* Education Styles */
+.education-item {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #f5f5f7;
+    border-radius: 18px;
+}
+
+.edu-header h4 {
+    font-size: 24px;
+    margin: 0;
+    color: #1d1d1f;
+}
+
+.edu-year {
+    color: #86868b;
+    font-size: 17px;
+}
+
+.edu-institution {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.edu-details {
+    font-size: 17px;
+    color: #424245;
+}
+
+/* Advanced Skills Grid */
+.skills-grid-advanced {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.skill-card-advanced {
+    background: #f5f5f7;
+    padding: 32px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card-advanced:hover {
+    transform: scale(1.02);
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.skill-name { color: #1d1d1f; }
+.skill-percent { color: #86868b; font-weight: 400; }
+
+.skill-bar-container {
+    background: rgba(0,0,0,0.05);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.skill-bar-fill {
+    background: #000;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.skill-desc {
+    font-size: 14px;
+    line-height: 1.42859;
+    color: #424245;
+    margin: 0;
+}
+
+/* Contact Styles */
+.contact-section-advanced {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contact-link {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-link a {
+    color: #06c;
+    text-decoration: none;
+}
+
+.contact-link a:hover {
+    text-decoration: underline;
+}
+
+.placeholder {
+    color: #86868b;
+    font-size: 17px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #d2d2d7;
+    margin: 80px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 734px) {
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
+    .exp-header { flex-direction: column; }
+    .exp-period { margin-top: 4px; }
+}
